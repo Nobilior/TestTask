@@ -1,0 +1,315 @@
+body {
+	margin: 0 auto;
+}
+
+
+/*------header------*/
+
+.header {
+	height: 126px;
+	width: 100%;
+	position: fixed;
+	
+}
+
+.header-gradient {
+  background: linear-gradient(to left, #c0c0c8, #efe2d9);
+  opacity: 0.85;
+  height: 100%;
+}
+
+.header h1 {
+	margin: 0;
+	padding-top: 35px;
+	text-align: center;
+	color: white;
+	font-size: 35pt;
+}
+
+.line-header:after {
+	width: 50px;
+	margin: auto;
+	margin-top: 6px;
+	border-bottom: #fb2e00c2 solid 1px;
+	display: block;
+	content: "";
+	text-align: center;
+}
+
+/*------end header------*/
+
+/*------section------*/
+
+/*.section:before {
+	display: inline-block;
+	content: '';
+	height: 100%;
+	vertical-align: middle;
+}*/
+
+.section {
+	/*text-align: center;*/
+	/*background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;*/
+	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/head-baner.jpg);
+	background-size: cover;
+	background-position: center;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+
+}
+
+/*------form------*/
+
+.login-content {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.login-content form {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.input {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	margin-bottom: 1.5em;
+	background: rgba(255,255,255,0.3);
+	text-align: center;
+	font-size: 15pt;
+	box-shadow: 0 0 10px #000000;
+}
+
+.input:hover {
+	box-shadow: 0 0 10px #2da2a2;
+}
+
+.input:focus {
+	background: #fb2e002b;
+}
+
+/*.input2 {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	margin-bottom: 1.5em;
+	background: rgba(255,255,255,0.3);
+	text-align: center;
+	font-size: 15pt;
+	box-shadow: 0 0 10px #000000;
+}
+
+.input2:hover {
+	box-shadow: 0 0 10px #2da2a2;
+}
+
+.input2:focus {
+	background: #fb2e002b;
+}*/
+
+.icon-form {
+  margin: 30px 0 30px 0;
+  padding: 30px 15px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.40);
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #fb2e00c2;
+  box-shadow: 0 0 10px #000000;
+
+}
+ 
+.icon-form:hover {
+	cursor: pointer;
+    box-shadow: 0 0 10px #fb2e00c2;
+}
+
+.icon-form:active {
+	background: #bab8bd;
+}
+
+/*------end form------*/
+
+/*.windows-login {
+	position: absolute;
+	bottom: 0px;
+	right: ;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 5px;
+
+	border: 1px solid black;
+	width: 240px;
+	height: 40px;
+}
+
+.windows-password {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 5px;
+
+	border: 1px solid black;
+	width: 200px;
+	height: auto;
+}*/
+
+.windows-login {
+	position: absolute;
+	top: 45px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	box-shadow: 0 0 10px #fb2e00c2;
+	min-width: 200px;
+	height: auto;
+}
+
+.windows-login:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; left: 10%; top: calc(0% - 12px);
+	border-top: 12px solid transparent;
+	border-left: 24px solid rgba(255,255,255,0.8);
+}
+
+.windows-password {
+	position: absolute;
+	top: 116px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 5px;
+	box-shadow: 0 0 10px #fb2e00c2;
+	min-width: 200px;
+	height: auto;
+}
+
+.windows-password:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; left: 10%; top: calc(0% - 12px);
+	border-top: 12px solid transparent;
+	border-left: 24px solid rgba(255,255,255,0.8);
+}
+
+/*------end section------*/
+
+/*------footer------*/
+
+.footer {
+	height: 126px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: linear-gradient(#c0c0c8, #efe2d9);
+}
+
+.social-media {
+  	padding-top: 15px;
+  	text-align: center;
+}
+
+.icon-social-media {
+  	margin-right: 8px;
+  	border-radius: 50%;
+  	display: inline-block;
+  	width: 35px;
+  	height: 35px;
+}
+
+.icon-social-media:hover {
+  	cursor: pointer;
+  	box-shadow: 0 0 15px #fb2e00c2;
+}
+
+.icon-facebook {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/facebook.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+
+}
+
+.icon-twitter {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/twitter.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+}
+
+.icon-dribbble {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/dribbble.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+}
+
+.icon-instagram {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/instagram.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+}
+
+.icon-google {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/google.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+}
+
+.icon-youtube {
+  	width: 35px;
+  	height: 35px;
+  	background-image: url(http://university.netology.ru/u/igavrilov/ilya/diplom/image/youtube.png);
+  	box-shadow: 0 0 10px #000000;
+  	border-radius: 50%;
+}
+
+.time {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#txt {
+	margin-right: 30px; 
+	display: inline-block;
+	font-size: 19px;
+	font-family: 'Hammersmith One', sans-serif;
+	color: #fb2e00c2;
+}
+
+#day {
+	display: inline-block;
+	font-size: 19px;
+	font-family: 'Hammersmith One', sans-serif;
+	color: #fb2e00c2;
+}
+
+.weekday-box {
+	margin-top: 8px;
+	text-align: center;
+}
+
+#weekday {
+	display: inline-block;
+	font-size: 19px;
+	font-family: 'Hammersmith One', sans-serif;
+	color: #fb2e00c2;
+}
+/*------end footer------*/
